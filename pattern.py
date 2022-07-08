@@ -1,34 +1,27 @@
-#### NEED pattern like #####
-"""
-     *
-    ***
-   *****
-  *******
-**********
+for i in range(0, 7):
+    for j in range(0, i + 1):
+        print("*", end='')
+    print("\r")
 
 
-total_chars = int(raw_input("enter pattern total chars:  " ))
-for i in range(0, total_chars):
+
+len = 7
+count = 0
+for i in range(0, 7):
+    for j in range(len, i, -1):
+        print(' ', end='')
+        count = count + 1
     for j in range(0, i+1):
-        print("* ", end  = ' ')
-    print()
-"""
-def pypart(n): 
-      
-    # outer loop to handle number of rows 
-    # n in this case 
-    for i in range(0, n): 
-      
-        # inner loop to handle number of columns 
-        # values changing acc. to outer loop 
-        for j in range(0, i+1): 
-          
-            # printing stars 
-            print("* ",end="") 
-       
-        # ending line after each row 
-        print("\r") 
-  
-# Driver Code 
-n = 5
-pypart(n) 
+        print('*', end='')
+    print("")
+
+
+k = 3
+len = 7
+for i in range(0, 7):
+    for j in range(len + 2, k, -1):
+        print(" ", end='')
+    for j in range(0, i):
+        print('* ', end='')
+    k = k + 1
+    print("")
